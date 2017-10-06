@@ -21,7 +21,7 @@ public class E01S01_Web_Identification {
 		
 		String fileName = "file:///D:/CTFS/poc/registerForm.html";
 
-		WebDriver driver = LoadWebDriver.configureChromeBrowser(fileName);
+		WebDriver driver = LoadWebDriver.SetWebDriver("chrome", fileName);
 
 		RegisterPage rp = new RegisterPage();
 

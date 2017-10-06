@@ -1,9 +1,7 @@
 package com.ness.scriptPackage;
 
-import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Actions;
 
 import com.ness.generic.ByElements;
 import com.ness.generic.LoadWebDriver;
@@ -15,7 +13,7 @@ public class E03S05_KeyBoardEvents_Actions {
 	public static void main(String[] args) throws InterruptedException {
 		String fileName = "file:///D:/CTFS/poc/registerForm.html";
 
-		WebDriver driver = LoadWebDriver.configureChromeBrowser(fileName);
+		WebDriver driver = LoadWebDriver.SetWebDriver("chrome", fileName);
 
 		RegisterPage rp = new RegisterPage();
 
@@ -23,7 +21,8 @@ public class E03S05_KeyBoardEvents_Actions {
 
 		WebElement element = Locators.getLocator(ByElements.getByName(fname), driver);
 		
-		Actions action = new Actions(driver);
+		System.out.println(element.getText());
+		//Actions action = new Actions(driver);
 		
 		//action.click().keyDown(Keys.INSERT.ADD.)		.build().perform();
 	}

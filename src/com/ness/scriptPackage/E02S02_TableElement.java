@@ -16,7 +16,7 @@ public class E02S02_TableElement {
 		// Initialize page
 		String fileName = "file:///D:/CTFS/poc/tablePage.html";
 		// configure browser load WebDriver with html page
-		WebDriver driver = LoadWebDriver.configureChromeBrowser(fileName);
+		WebDriver driver = LoadWebDriver.SetWebDriver("Chrome", fileName);
 		// read property file
 		RegisterPage rp = new RegisterPage();
 		// Assign property key value

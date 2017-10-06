@@ -15,7 +15,7 @@ public class E03S05_Events_Actions {
 	public static void main(String[] args) throws InterruptedException {
 
 		String fileName = "http://www.drikpanchang.com/panchang/hindu-panchangs.html";
-		WebDriver driver = LoadWebDriver.configureChromeBrowser(fileName);
+		WebDriver driver = LoadWebDriver.SetWebDriver("Chrome", fileName);
 
 		// wait / timeout
 		driver.manage().timeouts().pageLoadTimeout(10, TimeUnit.SECONDS);

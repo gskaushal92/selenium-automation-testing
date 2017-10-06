@@ -14,7 +14,7 @@ public class E03S01_MultipleWindow {
 	public static void main(String[] args) throws InterruptedException {
 
 		String fileName = "file:///D:/CTFS/poc/registerForm.html";
-		WebDriver driver = LoadWebDriver.configureChromeBrowser(fileName);
+		WebDriver driver = LoadWebDriver.SetWebDriver("Chrome", fileName);
 
 		// Store and Print the name of the First window on the console
 		String window = driver.getWindowHandle();

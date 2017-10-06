@@ -16,7 +16,7 @@ public class E02S01_Alert {
 
 		String fileName = "file:///D:/CTFS/poc/alertPage.html";
 
-		WebDriver driver = LoadWebDriver.configureChromeBrowser(fileName);
+		WebDriver driver = LoadWebDriver.SetWebDriver("Chrome", fileName);
 
 		RegisterPage rp = new RegisterPage();
 

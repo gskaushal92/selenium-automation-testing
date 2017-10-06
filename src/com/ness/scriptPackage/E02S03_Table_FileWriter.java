@@ -20,7 +20,7 @@ public class E02S03_Table_FileWriter {
 		// Initialize page
 		String fileName = "file:///D:/CTFS/poc/tablePage.html";
 		// configure browser load WebDriver with html page
-		WebDriver driver = LoadWebDriver.configureChromeBrowser(fileName);
+		WebDriver driver = LoadWebDriver.SetWebDriver("Chrome", fileName);
 
 		// Create File In D: Driver.
 		String TestFile = "D:\\temp.txt";
